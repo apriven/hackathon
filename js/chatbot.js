@@ -162,3 +162,9 @@ ChatBot.debugPrint = function (msg) {
 };
 
 ChatBot.start();
+
+$("#submit").on("click", function () {
+    console.log("chat")
+    $("#login_page").css("display", "none");
+    $("#start").css("display", "inline");
+});

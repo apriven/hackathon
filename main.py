@@ -6,7 +6,6 @@ from bottle import route, run, template, static_file, request
 import json
 import random
 import requests
-from jokes import question_joke
 import os
 
 from sys import argv
@@ -139,8 +138,6 @@ def bot_message(input):
         return result(input)
     elif any(elem in input for elem in curse_list):
         return swear_words(input)
-    elif any(elem in input for elem in joke_list):
-        return question_joke()
     elif any(elem in input for elem in city_list):
         return weather_2(input)
     elif any(elem in input for elem in weather_list):

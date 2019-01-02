@@ -3,6 +3,14 @@ body{
     font-family:'Roboto Mono'
 }
 
+#main {
+    display: none;
+}
+
+#login_page {
+    display: block;
+}
+
 .clickable{
 	cursor:pointer;
 }
